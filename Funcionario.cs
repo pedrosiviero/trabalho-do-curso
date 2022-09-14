@@ -1,23 +1,27 @@
 namespace POO{
 
-    public class Funcionario{
+    public abstract class Funcionario : Pessoa{
+        public double salario = 0;
 
-        public string vendedores = ""; 
+        public double GetSalario(){
+            return salario; 
+        }
+        public void SetSalario(double salario){
+            this.salario = salario; 
+        }
 
-        public string gerente = ""; 
+        public void InformarDados(){
+            base.InformarDados();
+            Console.WriteLine("Digite o salario:");
+            salario = double.Parse(Console.ReadLine());
+        }
 
+        public abstract void AumentarSalario();
 
-        public string GetVendedores(){
-            return vendedores; 
-        }
-        public void SetVendedores(string vendedores){
-            this.vendedores = vendedores; 
-        }
-        public string GetGerente(){
-            return gerente; 
-        }
-        public void SetGerente(string gerente){
-            this.gerente = gerente; 
-        }
+        /*if(profissao == 2 || profissao == 3){
+                cliente1.SetSalario(salario);
+            }*/
+            
+        
     }
 }

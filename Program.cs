@@ -6,18 +6,9 @@ namespace POO{
 
         static void Main(string[] args){
 
-            Cliente larissa = new Cliente("123", "nome");
-
-
-
-
-
-
-
-
-
-
+            
+            
+            
         }
     }
 }
-
