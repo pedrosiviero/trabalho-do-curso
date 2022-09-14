@@ -9,7 +9,7 @@ namespace POO{
 
         public string endereco = "";
 
-        public int profissao = 0;
+        public int profissa = 0; 
 
         public string GetRg(){
             return rg; 
@@ -41,11 +41,11 @@ namespace POO{
         public void SetCpf(string cpf){
             this.cpf = cpf; 
         }
-         public int GetProfissao(){
-            return profissao; 
+         public int GetProfissa(){
+            return profissa; 
         }
-        public void SetProfissao(int profissao){
-            this.profissao = profissao; 
+        public void SetProfissa(int profissa){
+            this.profissa = profissa; 
         }
 
         public void InformarDados(){
@@ -65,6 +65,7 @@ namespace POO{
             Console.WriteLine("Digite o endereço:");
             endereco = Console.ReadLine();
         }
+        
 
         /*if(profissao == 1){
                 Console.WriteLine("Você foi cadastrado\n" + nome + "\n" + cpf + "\n" + rg + "\n" + dataNascimento + "\n " + endereco)

@@ -6,6 +6,7 @@ namespace POO{
         public string vendedor = "";
 
         public string listaProdutos = "";
+        public int valorTotal = 0;
 
         public string GetCliente(){
             return cliente; 
@@ -24,6 +25,22 @@ namespace POO{
         }
         public void SetListaProduto(string listaProdutos){
             this.listaProdutos = listaProdutos;
+        } 
+        public int GetValorTotal(){
+            return valorTotal; 
+        }
+        public void SetValorTotal(int valorTotal){
+            this.valorTotal = valorTotal; 
+        }
+
+        public void InformarDados(){
+
+        Console.WriteLine("Digite o produto: ");
+        listaProdutos = Console.ReadLine();
+
+        Console.WriteLine("Digite o valor total: ");
+        valorTotal = int.Parse(Console.ReadLine());
+
         }
     }
 }

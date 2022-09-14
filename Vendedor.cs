@@ -7,7 +7,7 @@ namespace POO{
         }*/
         public override void AumentarSalario()
         {
-            throw new NotImplementedException();
+          //  Console.WriteLine("Seu salário aumentou 15% e ficou em: R$" + salario * 0.15);
         }
     }
 }
