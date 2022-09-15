@@ -6,7 +6,7 @@ namespace POO{
         public string codigo = "";
         public string marca = ""; 
         public string descricao = "";
-        public int valorUnidade = 0;
+        public double valorUnidade = 0;
 
         public string GetCodigo(){
             return codigo; 
@@ -26,10 +26,10 @@ namespace POO{
         public void SetDescricao(string descricao){
             this.descricao = descricao; 
         }
-        public int GetValorUnidade(){
+        public double GetValorUnidade(){
             return valorUnidade; 
         }
-        public void SetValorUnidade(int valorUnidade){
+        public void SetValorUnidade(double valorUnidade){
             this.valorUnidade = valorUnidade; 
         }
 
@@ -45,7 +45,7 @@ namespace POO{
             descricao = Console.ReadLine();
 
             Console.WriteLine("Digite o valor da unidade: ");
-            valorUnidade = int.Parse(Console.ReadLine());
+            valorUnidade = double.Parse(Console.ReadLine());
 
         }
 

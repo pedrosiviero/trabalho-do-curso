@@ -8,7 +8,7 @@ namespace POO{
         private string cep = "";
         private string cidade = "";
         private string estado = "";
- // arrumar endereço(new) produto e venda 
+        
        public string GetRua(){
             return rua; 
         }

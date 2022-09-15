@@ -1,13 +1,11 @@
 namespace POO{
     public abstract class Pessoa{
-        public string cpf = "";
-        public string nome = "";
+        private string cpf = "";
+        private string nome = "";
 
-        public string rg = "";
+        private string rg = "";
 
-        public string dataNascimento = "";
-
-        public string endereco = "";
+        private string dataNascimento = "";
 
         public int profissa = 0; 
 
@@ -22,12 +20,6 @@ namespace POO{
         }
         public void SetDataNascimento(string dataNascimento){
             this.dataNascimento = dataNascimento; 
-        }
-        public string GetEndereco(){
-            return endereco; 
-        }
-        public void SetEndereço(string endereco){
-            this.endereco = endereco; 
         }
          public string GetNome(){
             return nome; 
@@ -62,14 +54,7 @@ namespace POO{
             Console.WriteLine("Digite a data de nascimento:");
             dataNascimento = Console.ReadLine();
 
-            Console.WriteLine("Digite o endereço:");
-            endereco = Console.ReadLine();
         }
-        
-
-        /*if(profissao == 1){
-                Console.WriteLine("Você foi cadastrado\n" + nome + "\n" + cpf + "\n" + rg + "\n" + dataNascimento + "\n " + endereco)
-            }*/
         
     }
 }

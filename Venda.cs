@@ -2,22 +2,22 @@ namespace POO{
 
     public class Venda{
 
-        public string cliente = "";
-        public string vendedor = "";
+        public Cliente cliente;
+        public Vendedor vendedor;
 
         public string listaProdutos = "";
         public int valorTotal = 0;
 
-        public string GetCliente(){
+        public Cliente GetCliente(){
             return cliente; 
         }
-        public void SetCliente(string cliente){
+        public void SetCliente(Cliente cliente){
             this.cliente = cliente; 
         }
-        public string GetVendedor(){
+        public Vendedor GetVendedor(){
             return vendedor; 
         }
-        public void SetVendedor(string vendedor){
+        public void SetVendedor(Vendedor vendedor){
             this.vendedor = vendedor; 
         }
         public string GetListaProdutos(){
@@ -35,12 +35,9 @@ namespace POO{
 
         public void InformarDados(){
 
-        Console.WriteLine("Digite o produto: ");
+        Console.WriteLine("Agora vamos cadastrar seu produto.\nDigite o produto: ");
         listaProdutos = Console.ReadLine();
-
-        Console.WriteLine("Digite o valor total: ");
-        valorTotal = int.Parse(Console.ReadLine());
-
+        
         }
     }
 }
