@@ -4,7 +4,7 @@ namespace POO{
 
         public Cliente cliente;
         public Vendedor vendedor;
-
+        public Produto produto;
         public string listaProdutos = "";
         public int valorTotal = 0;
 
@@ -13,6 +13,12 @@ namespace POO{
         }
         public void SetCliente(Cliente cliente){
             this.cliente = cliente; 
+        }
+         public Produto GetProduto(){
+            return produto; 
+        }
+        public void SetProduto(Produto produto){
+            this.produto = produto; 
         }
         public Vendedor GetVendedor(){
             return vendedor; 
@@ -35,8 +41,8 @@ namespace POO{
 
         public void InformarDados(){
 
-        Console.WriteLine("Agora vamos cadastrar seu produto.\nDigite o produto: ");
-        listaProdutos = Console.ReadLine();
+            Console.WriteLine("Agora vamos cadastrar seu produto.\nDigite o produto: ");
+            listaProdutos = Console.ReadLine();
         
         }
     }
